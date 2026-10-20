@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hugo Marín Sedeño | Desarrollador de Software y Aplicaciones</title>
+    <meta name="description" content="Portfolio profesional de Hugo Marín Sedeño, Desarrollador de Software y Aplicaciones Multiplataforma (DAM). Proyectos en Java, Android, Bases de Datos SQL (MySQL) y Desarrollo Web.">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <!-- Open Graph / Vista Previa para LinkedIn, Discord y WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hugomsedeno.github.io/">
+    <meta property="og:title" content="Hugo Marín Sedeño | Desarrollador de Software y Aplicaciones">
+    <meta property="og:description" content="Portfolio de proyectos reales en Java, Sistemas Multiproceso, Bases de Datos Relacionales SQL (MySQL), Desarrollo Android y Maquetación Web (HTML5 & CSS3).">
+    <meta property="og:image" content="https://hugomsedeno.github.io/og-preview.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <!-- Twitter / Tarjeta Grande -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Hugo Marín Sedeño | Desarrollador de Software y Aplicaciones">
+    <meta name="twitter:description" content="Portfolio de proyectos reales en Java, Sistemas Multiproceso, Bases de Datos SQL, Android y Desarrollo Web.">
+    <meta name="twitter:image" content="https://hugomsedeno.github.io/og-preview.png">
+    <!-- Google Fonts: Inter & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background Glow Effects -->
+    <div class="bg-glow bg-glow-1" aria-hidden="true"></div>
+    <div class="bg-glow bg-glow-2" aria-hidden="true"></div>
+    <div class="bg-grid" aria-hidden="true"></div>
+
+    <!-- Header / Navbar -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="#inicio" class="logo">
+                <span class="logo-bracket">&lt;</span>Hugo <span class="logo-dot">Marin</span><span class="logo-bracket">/&gt;</span>
+            </a>
+
+            <nav class="nav" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+                    <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
+                    <li><a href="#stack" class="nav-link">Conocimientos</a></li>
+                    <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+                    <li><a href="#formacion" class="nav-link">Formación</a></li>
+                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#contacto" class="btn btn-primary btn-sm">
+                    <i data-lucide="send"></i>
+                    <span>Contactar</span>
+                </a>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir menú">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero section" id="inicio">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="availability-badge">
+                        <span class="status-dot"></span>
+                        <span><strong>Hugo Marín Sedeño</strong> <span class="badge-sep">&bull;</span> Disponible para nuevos proyectos</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        Desarrollador de <span class="text-gradient">Software</span><br>
+                        y <span class="text-gradient-secondary">Aplicaciones</span>.
+                    </h1>
+
+                    <p class="hero-description">
+                        Estudiante del Grado Superior en <strong>Desarrollo de Aplicaciones Multiplataforma (DAM)</strong> con conocimientos en <strong>Java, Desarrollo Android, HTML, CSS y Bases de Datos</strong>. Busco una empresa donde realizar mis prácticas formativas, aportar compromiso y seguir aprendiendo en un entorno profesional.
+                    </p>
+
+                    <div class="hero-cta">
+                        <a href="#proyectos" class="btn btn-primary">
+                            <i data-lucide="folder-git-2"></i>
+                            <span>Ver Proyectos</span>
+                        </a>
+                        <a href="cv-hugo.pdf" target="_blank" class="btn btn-secondary" id="download-cv-btn">
+                            <i data-lucide="file-down"></i>
+                            <span>Descargar CV (PDF)</span>
+                        </a>
+                    </div>
+
+                    <div class="hero-socials">
+                        <a href="https://github.com/hugomsedeno" target="_blank" rel="noopener noreferrer" class="social-pill" title="GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/hugo-marín-sedeño-79bb27302" target="_blank" rel="noopener noreferrer" class="social-pill" title="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                            <span>LinkedIn</span>
+                        </a>
+                        <button type="button" class="social-pill copy-email-btn" data-email="hugomsedeno@gmail.com" title="Copiar correo electrónico">
+                            <i data-lucide="mail"></i>
+                            <span>hugomsedeno@gmail.com</span>
+                            <i data-lucide="copy" class="copy-icon"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Órbita / Constelación de Tecnologías (Solo logos sin texto, estilo Daksh Nauni) -->
+                <div class="hero-visual">
+                    <div class="tech-orbit-scene">
+                        <!-- Líneas de cuadrícula y ejes del radar -->
+                        <div class="orbit-axis axis-h"></div>
+                        <div class="orbit-axis axis-v"></div>
+                        <div class="orbit-axis axis-d1"></div>
+                        <div class="orbit-axis axis-d2"></div>
+
+                        <!-- Anillos concéntricos -->
+                        <div class="orbit-ring ring-1"></div>
+                        <div class="orbit-ring ring-2"></div>
+                        <div class="orbit-ring ring-3"></div>
+
+                        <!-- Puntos luminosos en la órbita -->
+                        <span class="orbit-spark spark-1"></span>
+                        <span class="orbit-spark spark-2"></span>
+                        <span class="orbit-spark spark-3"></span>
+
+                        <!-- 1. JAVA (Logo oficial limpio sin texto) -->
+                        <div class="tech-glass-node node-java" title="Java">
+                            <svg viewBox="0 0 128 128" width="44" height="44" fill="#f8fafc">
+                                <path d="M47.6 98.9s-4.8 2.8 3.4 3.7c9.9 1.1 15 1 25.9-1.1 0 0 2.9 1.8 6.9 3.4-24.5 10.5-55.5-.6-36.2-6zm-3-13.7s-5.4 4 2.8 4.8c10.7 1.1 19.1 1.2 33.7-1.6 0 0 2 2 5.2 3.1-29.9 8.7-63.1.7-41.7-6.3z"/>
+                                <path d="M69.9 61.2c6.1 7-1.6 13.3-1.6 13.3s15.4-8 8.3-17.9c-6.6-9.2-11.7-13.8 15.8-29.5 0 0-43.2 10.8-22.5 34.1z"/>
+                                <path d="M102.7 108.9s3.6 3-4 5.3c-14.3 4.3-59.6 5.6-72.2.2-4.5-2 4-4.7 6.7-5.3 2.8-.6 4.4-.5 4.4-.5-5.1-3.6-32.9 7-14.1 10.1 51.2 8.3 93.4-3.7 79.2-9.8zM50 71.3s-23 5.5-8.1 7.5c6.3.8 18.8.7 30.5-.3 9.5-.8 19.1-2.5 19.1-2.5s-3.4 1.4-5.8 3.1c-23.4 6.2-68.6 3.3-55.6-3 11-5.3 19.9-4.8 19.9-4.8zm41.3 23c23.7-12.3 12.7-24.1 5.1-22.5-1.9.4-2.7.7-2.7.7s.7-1.1 2-1.5c14.9-5.2 26.4 15.5-4.8 23.7 0 0 .3-.2.4-.4z"/>
+                                <path d="M76.5 11.4s13.1 13.1-12.4 33.3c-20.5 16.2-4.7 25.4 0 35.9-11.9-10.8-20.7-20.3-14.8-29.1 8.6-12.9 32.5-19.2 27.2-40.1z"/>
+                                <path d="M52.3 123.5c22.8 1.5 57.8-.8 58.6-11.7 0 0-1.6 4.1-18.8 7.3-19.4 3.6-43.3 3.2-57.5.9 0 0 2.9 2.4 17.7 3.5z"/>
+                            </svg>
+                        </div>
+
+                        <!-- 2. ANDROID (Logo robot Android sin texto) -->
+                        <div class="tech-glass-node node-android" title="Desarrollo Android">
+                            <svg viewBox="0 0 24 24" width="44" height="44" fill="#f8fafc">
+                                <path d="M17.6 9.48l1.84-3.18c.16-.31.04-.69-.26-.85-.29-.15-.65-.06-.83.22l-1.88 3.24a11.43 11.43 0 0 0-8.94 0L5.65 5.67c-.19-.28-.54-.37-.83-.22-.3.16-.42.54-.26.85l1.84 3.18C2.92 11.43.84 14.94.5 19h23c-.34-4.06-2.42-7.57-5.9-9.52zM7 15.25a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5zm10 0a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5z"/>
+                            </svg>
+                        </div>
+
+                        <!-- 3. HTML5 (Escudo sin texto) -->
+                        <div class="tech-glass-node node-html" title="HTML5">
+                            <svg viewBox="0 0 24 24" width="42" height="42" fill="#f8fafc">
+                                <path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/>
+                            </svg>
+                        </div>
+
+                        <!-- 4. CSS3 (Escudo sin texto) -->
+                        <div class="tech-glass-node node-css" title="CSS3">
+                            <svg viewBox="0 0 24 24" width="42" height="42" fill="#f8fafc">
+                                <path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"/>
+                            </svg>
+                        </div>
+
+                        <!-- 5. BASES DE DATOS SQL (Icono limpio sin texto) -->
+                        <div class="tech-glass-node node-sql" title="Bases de Datos SQL">
+                            <svg viewBox="0 0 24 24" width="42" height="42" fill="none" stroke="#f8fafc" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                                <path d="M3 5V19A9 3 0 0 0 21 19V5"/>
+                                <path d="M3 12A9 3 0 0 0 21 12"/>
+                            </svg>
+                        </div>
+
+                        <!-- 6. GITHUB (Logo oficial sin texto) -->
+                        <div class="tech-glass-node node-github" title="GitHub">
+                            <svg viewBox="0 0 24 24" width="42" height="42" fill="#f8fafc">
+                                <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.68-1.28-1.68-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.69 0-1.26.45-2.29 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11.05 11.05 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.62 1.59.23 2.76.11 3.05.74.8 1.18 1.83 1.18 3.09 0 4.42-2.69 5.39-5.25 5.67.41.36.78 1.06.78 2.14 0 1.55-.01 2.79-.01 3.17 0 .31.21.68.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/>
+                            </svg>
+                        </div>
+
+                        <!-- 7. GIT (Logo oficial de Git sin texto) -->
+                        <div class="tech-glass-node node-smr" title="Git">
+                            <svg viewBox="0 0 24 24" width="42" height="42" fill="#f8fafc">
+                                <path d="M23.546 10.93L13.067.452c-.604-.603-1.582-.603-2.188 0L8.708 2.627l2.76 2.76c.645-.215 1.379-.07 1.889.441.516.515.658 1.258.438 1.9l2.658 2.66c.645-.223 1.387-.078 1.9.435.721.72.721 1.884 0 2.604-.719.719-1.881.719-2.6 0-.539-.541-.674-1.337-.404-1.996L12.86 8.955v6.525c.176.086.342.203.488.348.713.721.713 1.883 0 2.6-.719.721-1.889.721-2.609 0-.719-.719-.719-1.879 0-2.598.182-.18.387-.316.605-.406V8.835c-.217-.091-.424-.222-.6-.401-.545-.545-.676-1.342-.396-2.009L7.636 3.7.45 10.881c-.6.605-.6 1.584 0 2.189l10.48 10.477c.604.604 1.582.604 2.186 0l10.43-10.43c.605-.603.605-1.582 0-2.187"/>
+                            </svg>
+                        </div>
+
+                        <!-- 8. TERMINAL / LINUX / SISTEMAS (Sin texto) -->
+                        <div class="tech-glass-node node-ide" title="Terminal &amp; Sistemas">
+                            <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="#f8fafc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="4 17 10 11 4 5"/>
+                                <line x1="12" y1="19" x2="20" y2="19"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SOBRE MÍ / VALOR PARA LA EMPRESA -->
+        <section class="section" id="sobre-mi">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Perfil de Estudiante DAM</span>
+                    <h2 class="section-title">¿Qué puedo aportar en mis prácticas?</h2>
+                    <p class="section-subtitle">
+                        Soy estudiante de Grado Superior en Desarrollo de Aplicaciones Multiplataforma (DAM), con buena base técnica y muchas ganas de aprender y sumar en un equipo real.
+                    </p>
+                </div>
+
+                <div class="value-grid">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i data-lucide="coffee"></i>
+                        </div>
+                        <h3>Programación en Java</h3>
+                        <p>Base sólida en <strong>Java</strong>, Programación Orientada a Objetos (POO), estructuras de datos, colecciones, gestión de ficheros y conexión a bases de datos con JDBC.</p>
+                    </div>
+
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i data-lucide="smartphone"></i>
+                        </div>
+                        <h3>Desarrollo Android</h3>
+                        <p>Creación de aplicaciones móviles en <strong>Android Studio</strong>, diseño de interfaces de usuario, navegación entre pantallas y almacenamiento de datos locales.</p>
+                    </div>
+
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i data-lucide="database"></i>
+                        </div>
+                        <h3>Bases de Datos</h3>
+                        <p>Diseño y gestión de <strong>Bases de Datos relacionales (SQL)</strong>, creación de tablas, consultas, relaciones y conexión desde aplicaciones.</p>
+                    </div>
+
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i data-lucide="layout"></i>
+                        </div>
+                        <h3>Maquetación Web (HTML y CSS)</h3>
+                        <p>Desarrollo y diseño de páginas web estructuradas, limpias y adaptables a distintos dispositivos utilizando <strong>HTML5 y CSS3</strong>.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- STACK TÉCNICO / CONOCIMIENTOS -->
+        <section class="section section-alt" id="stack">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Mis Habilidades</span>
+                    <h2 class="section-title">Conocimientos Técnicos</h2>
+                    <p class="section-subtitle">
+                        Tecnologías y herramientas con las que trabajo durante mi formación en el Grado Superior de DAM.
+                    </p>
+                </div>
+
+                <div class="stack-grid">
+                    <!-- Categoría 1: Java -->
+                    <div class="stack-card">
+                        <div class="stack-card-header">
+                            <div class="stack-icon">
+                                <i data-lucide="coffee"></i>
+                            </div>
+                            <div>
+                                <h3>Programación en Java</h3>
+                                <span>Desarrollo de aplicaciones y lógica</span>
+                            </div>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-badge highlight">Java</span>
+                            <span class="skill-badge highlight">Programación Orientada a Objetos (POO)</span>
+                            <span class="skill-badge">Colecciones y Estructuras de Datos</span>
+                            <span class="skill-badge">JDBC</span>
+                            <span class="skill-badge">Interfaces Gráficas</span>
+                            <span class="skill-badge">Patrón MVC</span>
+                        </div>
+                    </div>
+
+                    <!-- Categoría 2: Desarrollo Android -->
+                    <div class="stack-card">
+                        <div class="stack-card-header">
+                            <div class="stack-icon">
+                                <i data-lucide="tablet-smartphone"></i>
+                            </div>
+                            <div>
+                                <h3>Desarrollo Android</h3>
+                                <span>Aplicaciones para dispositivos móviles</span>
+                            </div>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-badge highlight">Desarrollo Android</span>
+                            <span class="skill-badge highlight">Android Studio</span>
+                            <span class="skill-badge">Java en Android</span>
+                            <span class="skill-badge">Diseño de Interfaces XML</span>
+                            <span class="skill-badge">Activities &amp; Intents</span>
+                            <span class="skill-badge">SQLite</span>
+                        </div>
+                    </div>
+
+                    <!-- Categoría 3: Bases de Datos -->
+                    <div class="stack-card">
+                        <div class="stack-card-header">
+                            <div class="stack-icon">
+                                <i data-lucide="database"></i>
+                            </div>
+                            <div>
+                                <h3>Bases de Datos</h3>
+                                <span>Modelado y consultas de datos</span>
+                            </div>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-badge highlight">SQL</span>
+                            <span class="skill-badge highlight">MySQL</span>
+                            <span class="skill-badge">Bases de Datos Relacionales</span>
+                            <span class="skill-badge">Consultas SELECT / JOIN</span>
+                            <span class="skill-badge">Modelo Entidad-Relación</span>
+                            <span class="skill-badge">Normalización</span>
+                        </div>
+                    </div>
+
+                    <!-- Categoría 4: Web (HTML y CSS) & Herramientas -->
+                    <div class="stack-card">
+                        <div class="stack-card-header">
+                            <div class="stack-icon">
+                                <i data-lucide="code-2"></i>
+                            </div>
+                            <div>
+                                <h3>Web &amp; Herramientas</h3>
+                                <span>Maquetación web y entornos de desarrollo</span>
+                            </div>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-badge highlight">HTML5</span>
+                            <span class="skill-badge highlight">CSS3</span>
+                            <span class="skill-badge">Diseño Web Responsive</span>
+                            <span class="skill-badge">Eclipse / IntelliJ IDEA</span>
+                            <span class="skill-badge">Git &amp; GitHub</span>
+                            <span class="skill-badge">XML</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROYECTOS DESTACADOS -->
+        <section class="section" id="proyectos">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Prácticas y Trabajos</span>
+                    <h2 class="section-title">Proyectos Realizados</h2>
+                    <p class="section-subtitle">
+                        Ejemplos de proyectos y prácticas desarrollados aplicando Java, Android, Bases de Datos, HTML y CSS.
+                    </p>
+                </div>
+
+                <!-- Filtros de Proyectos -->
+                <div class="project-filters" role="tablist" aria-label="Filtrar proyectos por tecnología">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="java">Java &amp; Sistemas</button>
+                    <button class="filter-btn" data-filter="sql">Bases de Datos (SQL)</button>
+                    <button class="filter-btn" data-filter="web">Desarrollo Web (HTML &amp; CSS)</button>
+                </div>
+
+                <!-- Grid de Proyectos -->
+                <div class="projects-grid" id="projects-grid">
+
+                    <!-- Proyecto 1 -->
+                    <article class="project-card" data-category="java">
+                        <div class="project-banner banner-java">
+                            <div class="banner-top">
+                                <span class="project-type-badge">Backend &amp; Acceso a Datos &bull; Java I/O</span>
+                                <span class="visual-status-pill"><span class="status-dot"></span> Consola &amp; Persistencia</span>
+                            </div>
+                            <div class="visual-preview-box visual-terminal">
+                                <div class="visual-window-bar">
+                                    <span class="win-dots"><i></i><i></i><i></i></span>
+                                    <span class="win-title">Consola Java &mdash; C:\AD\Ejercicios\Empleados.txt</span>
+                                </div>
+                                <div class="visual-terminal-body">
+                                    <div class="term-menu-row">
+                                        <span class="term-tag">[1] Crear carpeta</span>
+                                        <span class="term-tag">[2] Provincias.txt</span>
+                                        <span class="term-tag">[4] Borrado recursivo</span>
+                                    </div>
+                                    <div class="term-output-box">
+                                        <div class="term-line success">&check; Archivo generado: C:\AD\Ejercicios\Empleados.txt</div>
+                                        <div class="term-line">ID: 1 | Nombre: Empleado_1 &bull; <span class="term-muted">BufferedWriter</span></div>
+                                        <div class="term-line">ID: 2 | Nombre: Empleado_2 &bull; <span class="term-muted">BufferedReader</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Sistema de Gestión de Ficheros y Persistencia</h3>
+                            <p class="project-description">
+                                Aplicación en Java diseñada para la administración del sistema de archivos y la persistencia secuencial de datos. Incorpora consola interactiva de operaciones, borrado recursivo de directorios y lectura/escritura optimizada con <code>BufferedReader</code> y <code>BufferedWriter</code>.
+                            </p>
+                            <div class="project-tech">
+                                <span>Java</span>
+                                <span>Java I/O</span>
+                                <span>Buffered Streams</span>
+                                <span>Recursividad</span>
+                                <span>Try-with-resources</span>
+                            </div>
+                            <div class="project-actions">
+                                <button class="btn-text project-modal-trigger" data-project="1">
+                                    <i data-lucide="eye"></i>
+                                    <span>Ver resultado visual y código</span>
+                                </button>
+                                <a href="https://github.com/hugomsedeno/java-gestion-ficheros-persistencia" target="_blank" rel="noopener noreferrer" class="btn-icon" title="Ver repositorio en GitHub">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto 2 -->
+                    <article class="project-card" data-category="java">
+                        <div class="project-banner banner-desktop">
+                            <div class="banner-top">
+                                <span class="project-type-badge">Programación de Sistemas &bull; Multiproceso</span>
+                                <span class="visual-status-pill"><span class="status-dot"></span> Monitor SO en Vivo</span>
+                            </div>
+                            <div class="visual-preview-box visual-monitor">
+                                <div class="visual-window-bar">
+                                    <span class="win-dots"><i></i><i></i><i></i></span>
+                                    <span class="win-title">MonitorProcesosSistema &bull; ProcessHandle API</span>
+                                </div>
+                                <div class="monitor-metrics-grid">
+                                    <div class="monitor-metric">
+                                        <span class="metric-label">PID Proceso Actual</span>
+                                        <strong class="metric-val">14820 <span>(java.exe)</span></strong>
+                                    </div>
+                                    <div class="monitor-metric">
+                                        <span class="metric-label">PID Proceso Padre</span>
+                                        <strong class="metric-val">9412 <span>(eclipse.exe)</span></strong>
+                                    </div>
+                                    <div class="monitor-metric">
+                                        <span class="metric-label">Hardware Detectado</span>
+                                        <strong class="metric-val">12 Núcleos CPU</strong>
+                                    </div>
+                                    <div class="monitor-metric">
+                                        <span class="metric-label">Subproceso Hijo</span>
+                                        <strong class="metric-val status-alive">&bull; ACTIVO (PID 18304)</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Gestor de Procesos del Sistema y Subprocesos</h3>
+                            <p class="project-description">
+                                Conjunto de utilidades en Java para el control de procesos del sistema operativo: auditoría en tiempo real de procesos activos y núcleos de CPU con <code>ProcessHandle</code>, lanzamiento multiplataforma de subprocesos con <code>ProcessBuilder</code> y procesamiento CLI.
+                            </p>
+                            <div class="project-tech">
+                                <span>Java</span>
+                                <span>ProcessBuilder</span>
+                                <span>ProcessHandle API</span>
+                                <span>Multiproceso</span>
+                                <span>Sistemas Operativos</span>
+                            </div>
+                            <div class="project-actions">
+                                <button class="btn-text project-modal-trigger" data-project="2">
+                                    <i data-lucide="eye"></i>
+                                    <span>Ver resultado visual y código</span>
+                                </button>
+                                <a href="https://github.com/hugomsedeno/java-gestor-procesos-sistema" target="_blank" rel="noopener noreferrer" class="btn-icon" title="Ver repositorio en GitHub">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto 3 -->
+                    <article class="project-card" data-category="sql">
+                        <div class="project-banner banner-android">
+                            <div class="banner-top">
+                                <span class="project-type-badge">Bases de Datos Relacionales &bull; SQL</span>
+                                <span class="visual-status-pill"><span class="status-dot"></span> Esquema &amp; Consultas</span>
+                            </div>
+                            <div class="visual-preview-box visual-sql">
+                                <div class="sql-schema-bar">
+                                    <span class="sql-node">PK cliente</span>
+                                    <span class="sql-rel">1:N &rarr;</span>
+                                    <span class="sql-node highlight">FK alquiler</span>
+                                    <span class="sql-rel">&larr; N:1</span>
+                                    <span class="sql-node">PK vehiculo</span>
+                                </div>
+                                <table class="visual-sql-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Cliente</th>
+                                            <th>Vehículo</th>
+                                            <th>Precio/Día</th>
+                                            <th>Estado</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Ana López</td>
+                                            <td>Seat Ibiza</td>
+                                            <td>35,00 &euro;</td>
+                                            <td><span class="sql-badge-ok">Alquilado</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Luis Pérez</td>
+                                            <td>Toyota Corolla</td>
+                                            <td>45,00 &euro;</td>
+                                            <td><span class="sql-badge-ok">Alquilado</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Base de Datos Relacional «RentACar» (SQL)</h3>
+                            <p class="project-description">
+                                Diseño e implementación en MySQL de un sistema de gestión de alquiler de vehículos. Incluye modelado DDL con integridad referencial (<code>FOREIGN KEY</code>, <code>CHECK</code>, <code>UNIQUE</code>), consultas avanzadas con <code>JOIN</code>, control de transacciones ACID y gestión de roles DCL.
+                            </p>
+                            <div class="project-tech">
+                                <span>SQL / MySQL</span>
+                                <span>Diseño DDL &amp; DML</span>
+                                <span>Consultas JOIN</span>
+                                <span>Transacciones ACID</span>
+                                <span>Permisos DCL</span>
+                            </div>
+                            <div class="project-actions">
+                                <button class="btn-text project-modal-trigger" data-project="3">
+                                    <i data-lucide="eye"></i>
+                                    <span>Ver resultado visual y scripts SQL</span>
+                                </button>
+                                <a href="https://github.com/hugomsedeno/sql-sistema-gestion-rentacar" target="_blank" rel="noopener noreferrer" class="btn-icon" title="Ver repositorio en GitHub">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto 4 -->
+                    <article class="project-card" data-category="web">
+                        <div class="project-banner banner-web">
+                            <div class="banner-top">
+                                <span class="project-type-badge">Desarrollo Web Frontend &bull; HTML5 &amp; CSS3</span>
+                                <a href="repositorios-github/web-portal-elearning-antares/index.html" target="_blank" rel="noopener noreferrer" class="visual-live-link" title="Abrir la web real en otra pestaña">
+                                    <span class="status-dot"></span> Abrir Demo en Vivo &nearr;
+                                </a>
+                            </div>
+                            <div class="visual-preview-box visual-browser">
+                                <div class="visual-window-bar">
+                                    <span class="win-dots"><i></i><i></i><i></i></span>
+                                    <span class="win-title">antares-digital.es/index.html</span>
+                                </div>
+                                <div class="mini-antares-site">
+                                    <div class="mini-antares-nav">
+                                        <strong>ANTARES DIGITAL</strong>
+                                        <div class="mini-nav-items">
+                                            <span class="active">Inicio</span>
+                                            <span>E-Learning</span>
+                                            <span>Contenidos</span>
+                                        </div>
+                                    </div>
+                                    <div class="mini-antares-hero">
+                                        <div class="mini-hero-overlay">
+                                            <span>Antares Desarrollo Digital (ADD)</span>
+                                            <small>Factoría de contenidos SCORM de teleformación</small>
+                                        </div>
+                                    </div>
+                                    <div class="mini-antares-cards">
+                                        <div class="mini-card-item">Contenidos SCORM</div>
+                                        <div class="mini-card-item">Plataforma LMS</div>
+                                        <div class="mini-card-item">Reserva de Cursos</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Portal Web E-Learning «Antares Digital»</h3>
+                            <p class="project-description">
+                                Sitio web corporativo multipágina para una plataforma de teleformación y contenidos SCORM. Desarrollado con estructura semántica en <code>HTML5</code>, maquetación con <code>CSS3 Flexbox</code>, navegación fija, tarjetas de servicios y formulario de reserva de cursos.
+                            </p>
+                            <div class="project-tech">
+                                <span>HTML5 Semántico</span>
+                                <span>CSS3</span>
+                                <span>Flexbox Layout</span>
+                                <span>Web Multipágina</span>
+                                <span>Formularios Web</span>
+                            </div>
+                            <div class="project-actions">
+                                <button class="btn-text project-modal-trigger" data-project="4">
+                                    <i data-lucide="eye"></i>
+                                    <span>Ver resultado visual y código</span>
+                                </button>
+                                <div class="project-action-icons">
+                                    <a href="repositorios-github/web-portal-elearning-antares/index.html" target="_blank" rel="noopener noreferrer" class="btn-icon" title="Abrir Demo Web Interactiva en otra pestaña">
+                                        <i data-lucide="external-link"></i>
+                                    </a>
+                                    <a href="https://github.com/hugomsedeno/web-portal-elearning-antares" target="_blank" rel="noopener noreferrer" class="btn-icon" title="Ver repositorio en GitHub">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- FORMACIÓN ACADÉMICA Y MÓDULOS CLAVE -->
+        <section class="section section-alt" id="formacion">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Trayectoria Académica</span>
+                    <h2 class="section-title">Formación Académica</h2>
+                    <p class="section-subtitle">
+                        Recorrido formativo en desarrollo de aplicaciones, sistemas informáticos y administración de redes.
+                    </p>
+                </div>
+
+                <div class="timeline">
+                    <!-- Grado Superior DAM -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-header">
+                                <div>
+                                    <span class="timeline-date">Actualidad &bull; Grado Superior (CFGS)</span>
+                                    <h3>Técnico Superior en Desarrollo de Aplicaciones Multiplataforma (DAM)</h3>
+                                    <p class="timeline-place">Estudiante de Grado Superior</p>
+                                </div>
+                                <span class="timeline-badge">En curso</span>
+                            </div>
+                            <p class="timeline-desc">
+                                Aprendizaje práctico en el desarrollo de aplicaciones multiplataforma, modelado de bases de datos, creación de interfaces y programación en dispositivos móviles.
+                            </p>
+                            <div class="modules-grid">
+                                <div class="module-item">
+                                    <i data-lucide="check-circle"></i>
+                                    <span><strong>Programación:</strong> Desarrollo en Java, Programación Orientada a Objetos (POO) y estructuras de datos.</span>
+                                </div>
+                                <div class="module-item">
+                                    <i data-lucide="check-circle"></i>
+                                    <span><strong>Desarrollo Android:</strong> Creación de aplicaciones móviles con Android Studio, actividades e interfaces.</span>
+                                </div>
+                                <div class="module-item">
+                                    <i data-lucide="check-circle"></i>
+                                    <span><strong>Bases de Datos:</strong> Diseño relacional, modelo Entidad-Relación y consultas SQL (MySQL).</span>
+                                </div>
+                                <div class="module-item">
+                                    <i data-lucide="check-circle"></i>
+                                    <span><strong>Lenguajes de Marcas (Web):</strong> Maquetación y estilos web con HTML5, CSS3 y documentos XML.</span>
+                                </div>
+                                <div class="module-item">
+                                    <i data-lucide="check-circle"></i>
+                                    <span><strong>Acceso a Datos y Ficheros:</strong> Gestión de ficheros y conexión de programas Java con bases de datos (JDBC).</span>
+                                </div>
+                                <div class="module-item">
+                                    <i data-lucide="check-circle"></i>
+                                    <span><strong>Entornos de Desarrollo e Interfaces:</strong> Uso de IDEs (Eclipse / IntelliJ), control de versiones y diseño de ventanas.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Grado Medio SMR -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-header">
+                                <div>
+                                    <span class="timeline-date">Finalizado &bull; Grado Medio (CFGM)</span>
+                                    <h3>Técnico en Sistemas Microinformáticos y Redes (SMR)</h3>
+                                    <p class="timeline-place">Titulación Oficial de Grado Medio &bull; Prácticas realizadas</p>
+                                </div>
+                                <span class="timeline-badge badge-completed">Titulado</span>
+                            </div>
+                            <p class="timeline-desc">
+                                Formación técnica integral en instalación, configuración y mantenimiento de equipos informáticos, administración de sistemas operativos y despliegue de redes locales.
+                            </p>
+                            <div class="modules-grid">
+                                <div class="module-item">
+                                    <i data-lucide="check-circle"></i>
+                                    <span><strong>Montaje y Mantenimiento de Equipos:</strong> Diagnóstico de hardware, ensamblaje, reparación y soporte técnico.</span>
+                                </div>
+                                <div class="module-item">
+                                    <i data-lucide="check-circle"></i>
+                                    <span><strong>Sistemas Operativos (Monopuesto y en Red):</strong> Instalación y administración de entornos Windows y Linux (usuarios, permisos, dominios).</span>
+                                </div>
+                                <div class="module-item">
+                                    <i data-lucide="check-circle"></i>
+                                    <span><strong>Redes Locales y Servicios en Red:</strong> Configuración de routers/switches, direccionamiento IP, cableado estructurado, DHCP, DNS y servidores.</span>
+                                </div>
+                                <div class="module-item">
+                                    <i data-lucide="check-circle"></i>
+                                    <span><strong>Seguridad Informática:</strong> Copias de seguridad, protección de equipos, cortafuegos y buenas prácticas de ciberseguridad.</span>
+                                </div>
+                                <div class="module-item">
+                                    <i data-lucide="check-circle"></i>
+                                    <span><strong>Aplicaciones Web y Ofimáticas:</strong> Instalación de gestores web, bases de páginas con HTML/CSS y soporte a herramientas de oficina.</span>
+                                </div>
+                                <div class="module-item">
+                                    <i data-lucide="check-circle"></i>
+                                    <span><strong>Resolución de Incidencias:</strong> Experiencia práctica en atención a usuarios, máquinas virtuales (VirtualBox/VMware) y trabajo en equipo.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section class="section" id="contacto">
+            <div class="container">
+                <div class="contact-box">
+                    <div class="contact-info">
+                        <span class="section-tag">Contacto</span>
+                        <h2 class="section-title">Ponte en contacto conmigo</h2>
+                        <p class="contact-text">
+                            Si te interesa mi perfil, tienes alguna propuesta o quieres comentarme cualquier cosa sobre mis proyectos en <strong>Java, Desarrollo Android, HTML, CSS y Bases de Datos</strong>, puedes contactar conmigo por cualquiera de estas vías.
+                        </p>
+
+                        <div class="contact-methods">
+                            <div class="contact-method-card contact-link-card">
+                                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hugomsedeno@gmail.com" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; gap: 1rem; flex-grow: 1; text-decoration: none; color: inherit;">
+                                    <div class="contact-icon">
+                                        <i data-lucide="mail"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <span>Correo Electrónico</span>
+                                        <strong>hugomsedeno@gmail.com</strong>
+                                    </div>
+                                </a>
+                                <button type="button" class="btn-copy copy-email-btn" data-email="hugomsedeno@gmail.com">
+                                    <i data-lucide="copy"></i>
+                                    <span>Copiar</span>
+                                </button>
+                            </div>
+
+                            <a href="https://www.linkedin.com/in/hugo-marín-sedeño-79bb27302" target="_blank" rel="noopener noreferrer" class="contact-method-card contact-link-card">
+                                <div class="contact-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                                </div>
+                                <div class="contact-details">
+                                    <span>Perfil Profesional</span>
+                                    <strong>www.linkedin.com/in/hugo-marín-sedeño-79bb27302</strong>
+                                </div>
+                                <i data-lucide="arrow-up-right" class="external-arrow"></i>
+                            </a>
+
+                            <a href="https://github.com/hugomsedeno" target="_blank" rel="noopener noreferrer" class="contact-method-card contact-link-card">
+                                <div class="contact-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                                </div>
+                                <div class="contact-details">
+                                    <span>Repositorios de Código</span>
+                                    <strong>https://github.com/hugomsedeno</strong>
+                                </div>
+                                <i data-lucide="arrow-up-right" class="external-arrow"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Formulario rápido que abre cliente de correo o envía mensaje -->
+                    <form class="contact-form" id="contact-form">
+                        <h3>Envíame un mensaje directo</h3>
+                        <div class="form-group">
+                            <label for="name">Nombre o Empresa</label>
+                            <input type="text" id="name" name="name" placeholder="Ej. María García - Tech Solutions" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo de contacto</label>
+                            <input type="email" id="email" name="email" placeholder="ejemplo@empresa.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Hola Hugo, he visto tu portfolio y me gustaría ponerme en contacto contigo..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i data-lucide="send"></i>
+                            <span>Enviar Mensaje</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <span class="logo-bracket">&lt;</span>Hugo <span class="logo-dot">Marin</span><span class="logo-bracket">/&gt;</span>
+                <p>Estudiante de Desarrollo de Aplicaciones Multiplataforma (DAM)</p>
+            </div>
+            <div class="footer-links">
+                <a href="#inicio">Inicio</a>
+                <a href="#stack">Conocimientos</a>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#formacion">Formación</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+            <p class="footer-copy">&copy; 2026 Hugo. Portfolio de Estudiante DAM.</p>
+        </div>
+    </footer>
+
+    <!-- MODAL DE DETALLES TÉCNICOS DE PROYECTO -->
+    <div class="modal-backdrop" id="project-modal" aria-hidden="true">
+        <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+            <button class="modal-close" id="modal-close" aria-label="Cerrar ventana">
+                <i data-lucide="x"></i>
+            </button>
+            <div class="modal-header">
+                <span class="project-type-badge" id="modal-category">Categoría</span>
+                <h3 id="modal-title">Título del Proyecto</h3>
+            </div>
+            <div class="modal-body">
+                <p id="modal-description"></p>
+
+                <!-- Vista Previa Interactiva -->
+                <div class="modal-visual-section" id="modal-visual-section" style="display: none;">
+                    <div class="modal-visual-header">
+                        <h4>Demostración Visual del Proyecto:</h4>
+                        <span class="visual-interactive-badge">Vista interactiva</span>
+                    </div>
+                    <div class="modal-visual-container" id="modal-visual-container"></div>
+                </div>
+
+                <h4>Características Técnicas e Implementación:</h4>
+                <ul class="modal-features" id="modal-features"></ul>
+                <h4>Tecnologías Utilizadas:</h4>
+                <div class="project-tech" id="modal-tech"></div>
+
+                <!-- Visor de Código Fuente del Proyecto -->
+                <div class="modal-code-section" id="modal-code-section" style="display: none;">
+                    <div class="modal-code-header">
+                        <h4>Archivos del Proyecto (Código Fuente):</h4>
+                        <button type="button" class="btn-copy-code" id="modal-copy-code">
+                            <i data-lucide="copy"></i>
+                            <span>Copiar archivo</span>
+                        </button>
+                    </div>
+                    <div class="modal-code-tabs" id="modal-code-tabs"></div>
+                    <pre class="modal-code-viewer"><code id="modal-code-content"></code></pre>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-outline" id="modal-live-demo" style="display: none;">
+                    <i data-lucide="external-link"></i>
+                    <span>Abrir Demo Web Interactiva</span>
+                </a>
+                <a href="https://github.com/hugomsedeno" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="modal-github">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                    <span>Ver Repositorio en GitHub</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- TOAST DE NOTIFICACIÓN -->
+    <div class="toast" id="toast" role="status" aria-live="polite">
+        <i data-lucide="check-circle-2"></i>
+        <span id="toast-message">¡Correo copiado al portapapeles!</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
