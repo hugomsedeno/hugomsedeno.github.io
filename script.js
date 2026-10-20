@@ -1268,7 +1268,7 @@ main {
         });
     });
 
-    // 7. Formulario de contacto (abre cliente de correo listo para enviar)
+    // 7. Formulario de contacto (abre Gmail en nueva pestaña con el mensaje ya redactado para hugomsedeno@gmail.com)
     const contactForm = document.getElementById('contact-form');
     if (contactForm) {
         contactForm.addEventListener('submit', (e) => {
@@ -1278,10 +1278,11 @@ main {
             const message = document.getElementById('message').value.trim();
 
             const subject = encodeURIComponent(`Contacto Portfolio Hugo - ${name}`);
-            const body = encodeURIComponent(`Nombre / Empresa: ${name}\nCorreo: ${email}\n\nMensaje:\n${message}`);
-            window.location.href = `mailto:hugomsedeno@gmail.com?subject=${subject}&body=${body}`;
+            const body = encodeURIComponent(`Nombre / Empresa: ${name}\nCorreo de contacto: ${email}\n\nMensaje:\n${message}`);
+            const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=hugomsedeno@gmail.com&su=${subject}&body=${body}`;
+            window.open(gmailUrl, '_blank', 'noopener,noreferrer');
 
-            showToast('Abriendo tu gestor de correo para enviar el mensaje...');
+            showToast('Abriendo Gmail en otra pestaña con tu mensaje listo para enviar...');
             contactForm.reset();
         });
     }
